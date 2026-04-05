@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAX CLAIR | Collection Verdict</title>
+    <title>MAX CLAIR</title>
     <style>
-        /* ON GARDE EXACTEMENT TON STYLE D'ORIGINE */
-        html { scroll-behavior: smooth; }
-        
+        /* TON CODE ORIGINAL STRICT - NE PAS TOUCHER */
         body {
             font-family: 'Georgia', serif;
             background-color: #ffffff;
@@ -16,35 +14,29 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
+            height: 100vh;
             text-align: center;
         }
 
         nav {
-            position: fixed; /* Le menu reste en haut, immuable */
+            position: absolute;
             top: 60px;
             text-transform: uppercase;
             letter-spacing: 4px;
             font-size: 0.75rem;
-            z-index: 1000;
-            width: 100%;
         }
 
         nav a {
             text-decoration: none;
             color: #999;
             margin: 0 25px;
+            cursor: pointer; /* Pour le clic */
             transition: color 0.4s;
         }
 
-        nav a:hover { color: #000; }
-
-        /* LA PAGE D'ACCUEIL PURE (100% de l'écran) */
-        .hero {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        nav a:hover {
+            color: #000;
         }
 
         h1 {
@@ -55,34 +47,27 @@
             margin: 0;
         }
 
+        /* CETTE ZONE EST CELLE QUI VA CHANGER */
+        #main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 600px;
+            padding: 0 20px;
+        }
+
         .tagline {
             margin-top: 25px;
             font-style: italic;
             color: #777;
             letter-spacing: 3px;
             font-size: 0.85rem;
-        }
-
-        /* LES AUTRES RUBRIQUES (CACHÉES SOUS LA LIGNE D'HORIZON) */
-        .container {
-            width: 100%;
-            max-width: 600px;
-            min-height: 100vh; /* Chaque rubrique prend aussi tout l'écran */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 0 20px;
-            box-sizing: border-box;
-        }
-
-        .content {
-            text-align: justify;
             line-height: 1.8;
-            font-size: 1rem;
         }
 
         footer {
-            padding: 50px 0;
+            position: absolute;
+            bottom: 50px;
             font-size: 0.6rem;
             color: #ddd;
             letter-spacing: 2px;
@@ -94,34 +79,36 @@
 
     <nav>
         <a href="collection.html">Collection</a>
-        <a href="#maxclair">Max Clair</a>
-        <a href="#lettre">La Lettre</a>
+        <a onclick="showAccueil()">Max Clair</a>
+        <a onclick="showLettre()">La Lettre</a>
     </nav>
 
-    <div class="hero">
+    <div id="main-content">
         <h1>MAX CLAIR</h1>
         <div class="tagline">L'Équilibre et le Lien</div>
-    </div>
-
-    <div id="maxclair" class="container">
-        <h1>Max Clair</h1>
-        <div class="content">
-            <p>La collection <strong>VERDICT</strong> est née d'une envie de simplicité. L'idée est de proposer des ouvrages courts, sans détour, pour ceux qui cherchent à retrouver de la clarté dans leur quotidien.</p>
-            <p>Chaque livre est pensé comme une conversation entre la rigueur et l'intuition : la structure donne la force, le lien donne le sens.</p>
-        </div>
-    </div>
-
-    <div id="lettre" class="container">
-        <h1>La Lettre</h1>
-        <div class="content" style="text-align: center; font-style: italic; color: #555;">
-            La correspondance est en cours de préparation.<br>
-            Le lien se tisse prochainement.
-        </div>
     </div>
 
     <footer>
         © 2026 MAX CLAIR — TOUS DROITS RÉSERVÉS
     </footer>
+
+    <script>
+        // FONCTION POUR REVENIR À L'ACCUEIL PUR
+        function showAccueil() {
+            document.getElementById('main-content').innerHTML = `
+                <h1>MAX CLAIR</h1>
+                <div class="tagline">L'Équilibre et le Lien</div>
+            `;
+        }
+
+        // FONCTION POUR AFFICHER LA LETTRE
+        function showLettre() {
+            document.getElementById('main-content').innerHTML = `
+                <h1>La Lettre</h1>
+                <div class="tagline">La correspondance est en cours de préparation.<br>Le lien se tisse prochainement.</div>
+            `;
+        }
+    </script>
 
 </body>
 </html>
