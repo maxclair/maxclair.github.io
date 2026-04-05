@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAX CLAIR</title>
+    <title>MAX CLAIR | Collection Verdict</title>
     <style>
-        /* TON CODE ORIGINAL STRICT - NE PAS TOUCHER */
         body {
             font-family: 'Georgia', serif;
             background-color: #ffffff;
@@ -31,7 +30,6 @@
             text-decoration: none;
             color: #999;
             margin: 0 25px;
-            cursor: pointer; /* Pour le clic */
             transition: color 0.4s;
         }
 
@@ -47,22 +45,12 @@
             margin: 0;
         }
 
-        /* CETTE ZONE EST CELLE QUI VA CHANGER */
-        #main-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            max-width: 600px;
-            padding: 0 20px;
-        }
-
         .tagline {
             margin-top: 25px;
             font-style: italic;
             color: #777;
             letter-spacing: 3px;
             font-size: 0.85rem;
-            line-height: 1.8;
         }
 
         footer {
@@ -79,11 +67,11 @@
 
     <nav>
         <a href="collection.html">Collection</a>
-        <a onclick="showAccueil()">Max Clair</a>
-        <a onclick="showLettre()">La Lettre</a>
+        <a href="maxclair.html">Max Clair</a>
+        <a href="lettre.html">La Lettre</a>
     </nav>
 
-    <div id="main-content">
+    <div class="hero">
         <h1>MAX CLAIR</h1>
         <div class="tagline">L'Équilibre et le Lien</div>
     </div>
@@ -91,24 +79,6 @@
     <footer>
         © 2026 MAX CLAIR — TOUS DROITS RÉSERVÉS
     </footer>
-
-    <script>
-        // FONCTION POUR REVENIR À L'ACCUEIL PUR
-        function showAccueil() {
-            document.getElementById('main-content').innerHTML = `
-                <h1>MAX CLAIR</h1>
-                <div class="tagline">L'Équilibre et le Lien</div>
-            `;
-        }
-
-        // FONCTION POUR AFFICHER LA LETTRE
-        function showLettre() {
-            document.getElementById('main-content').innerHTML = `
-                <h1>La Lettre</h1>
-                <div class="tagline">La correspondance est en cours de préparation.<br>Le lien se tisse prochainement.</div>
-            `;
-        }
-    </script>
 
 </body>
 </html>
