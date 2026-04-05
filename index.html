@@ -10,15 +10,16 @@
             background-color: #ffffff;
             color: #1a1a1a;
             margin: 0;
+            padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            height: 100vh;
             text-align: center;
         }
 
+        /* NAVIGATION PURE */
         nav {
+            margin-top: 60px;
             margin-bottom: 100px;
             text-transform: uppercase;
             letter-spacing: 5px;
@@ -36,28 +37,62 @@
             color: #000;
         }
 
+        /* SECTION HERO (L'ACCUEIL MAGNIFIQUE) */
+        .hero {
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
         h1 {
             font-weight: normal;
-            font-size: 1.8rem;
-            letter-spacing: 12px;
+            font-size: 2.2rem;
+            letter-spacing: 15px;
             text-transform: uppercase;
             margin: 0;
         }
 
         .tagline {
-            margin-top: 20px;
+            margin-top: 25px;
             font-style: italic;
             color: #666;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
+            font-size: 0.9rem;
+        }
+
+        /* SECTIONS DE TEXTE ÉPURÉES */
+        .container {
+            max-width: 600px;
+            padding: 100px 20px;
+            border-top: 1px solid #f2f2f2;
+        }
+
+        .content {
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        .quote {
+            font-style: italic;
+            color: #666;
+            display: block;
+            margin-bottom: 30px;
+            text-align: center;
         }
 
         footer {
-            position: absolute;
-            bottom: 40px;
+            padding: 80px 0 40px 0;
             font-size: 0.6rem;
             color: #ccc;
             letter-spacing: 2px;
             text-transform: uppercase;
+        }
+
+        footer a {
+            color: #ccc;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -65,8 +100,8 @@
 
     <nav>
         <a href="collection.html">Collection</a>
-        <a href="maxclair.html">Max Clair</a>
-        <a href="lettre.html">La Lettre</a>
+        <a href="#maxclair">Max Clair</a>
+        <a href="#lettre">La Lettre</a>
     </nav>
 
     <div class="hero">
@@ -74,8 +109,27 @@
         <div class="tagline">L'Équilibre et le Lien</div>
     </div>
 
+    <div id="maxclair" class="container">
+        <div class="content">
+            <span class="quote">« Transmettre l'essentiel pour laisser la place à l'humain. »</span>
+            <p>
+                La collection <strong>VERDICT</strong> est née d'une envie de simplicité. L'idée est de proposer des ouvrages courts, sans détour, pour ceux qui cherchent à retrouver de la clarté dans leur quotidien. C’est un point de départ, une base solide sur laquelle chacun peut construire sa propre voie.
+            </p>
+            <p>
+                Chaque livre est pensé comme une conversation entre la rigueur et l'intuition : la structure donne la force, le lien donne le sens. C’est cette fluidité qui permet à la technique de s’adapter à la vie, et non l’inverse.
+            </p>
+        </div>
+    </div>
+
+    <div id="lettre" class="container">
+        <div class="content" style="text-align: center; font-style: italic; color: #555;">
+            La correspondance est en cours de préparation.<br>
+            Le lien se tisse prochainement.
+        </div>
+    </div>
+
     <footer>
-        © 2026 MAX CLAIR — TOUS DROITS RÉSERVÉS
+        © 2026 MAX CLAIR — <a href="mailto:maxclair7@outlook.fr">CONTACT</a>
     </footer>
 
 </body>
