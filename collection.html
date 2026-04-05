@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAX CLAIR | Collection Verdict</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav {
+            margin-top: 60px;
+            margin-bottom: 60px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 0.8rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #888;
+            margin: 0 20px;
+        }
+
+        nav a:hover { color: #000; }
+
+        .container {
+            max-width: 900px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-weight: normal;
+            font-size: 1.4rem;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            margin-bottom: 60px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 60px;
+            width: 100%;
+        }
+
+        .book {
+            text-align: center;
+        }
+
+        .book img {
+            width: 100%;
+            max-width: 220px;
+            height: auto;
+            border: 1px solid #f0f0f0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+        }
+
+        .book-title {
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            margin-top: 100px;
+            padding: 40px 0;
+            font-size: 0.65rem;
+            color: #bbb;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="collection.html">Collection</a>
+        <a href="index.html">Max Clair</a>
+        <a href="index.html#lettre">La Lettre</a>
+    </nav>
+
+    <div class="container">
+        <h1>Collection Verdict</h1>
+        
+        <div class="grid">
+            <div class="book">
+                <img src="couverture1.jpg" alt="Titre du Livre">
+                <div class="book-title">Titre du Volume</div>
+                <p style="font-size: 0.8rem; color: #666; font-style: italic;">Description courte de la méthode.</p>
+            </div>
+            
+            </div>
+    </div>
+
+    <footer>
+        <p>© 2026 MAX CLAIR — L'ÉQUILIBRE ET LE LIEN</p>
+    </footer>
+
+</body>
+</html>
