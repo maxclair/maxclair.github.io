@@ -56,7 +56,7 @@
             max-width: 800px;
             margin: 0 auto;
             text-align: center;
-            padding-bottom: 100px; /* Équilibre visuel avec le header */
+            padding-bottom: 80px; 
         }
 
         h1 {
@@ -75,26 +75,28 @@
             color: #333;
         }
 
-        /* FOOTER : L'ARMURE JURIDIQUE DISCRÈTE */
+        /* FOOTER : L'ARMURE ANTHRACITE (#444) */
         footer {
-            padding: 40px 0;
+            padding: 60px 0;
             text-align: center;
-            font-size: 0.7rem;
-            letter-spacing: 1.5px;
+            font-size: 0.72rem;
+            letter-spacing: 2px;
             text-transform: uppercase;
-            color: #888;
+            color: #444; /* Gris profond pour une lisibilité totale */
+            font-weight: 400;
         }
 
         footer a {
-            color: #888;
+            color: #444;
             text-decoration: none;
-            border-bottom: 1px solid #eee;
-            transition: all 0.3s;
+            border-bottom: 1.2px solid #bbb;
+            transition: all 0.2s ease-in-out;
+            padding-bottom: 2px;
         }
 
         footer a:hover {
             color: #000;
-            border-bottom: 1px solid #000;
+            border-bottom: 1.5px solid #000;
         }
 
         /* RESPONSIVE : ADAPTATION AUX ÉCRANS MOBILES */
@@ -102,6 +104,7 @@
             h1 { font-size: 2.2rem; letter-spacing: 5px; }
             nav a { margin: 0 10px; font-size: 0.7rem; letter-spacing: 1px; }
             .subtitle { font-size: 1rem; padding: 0 20px; }
+            footer { font-size: 0.65rem; padding: 40px 10px; }
         }
     </style>
 </head>
