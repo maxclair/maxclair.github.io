@@ -5,28 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAX CLAIR | L'Équilibre et le Lien</title>
     <style>
-        /* CONFIGURATION GLOBALE */
-        html {
-            scroll-behavior: smooth;
-        }
-        
         body {
             font-family: 'Georgia', serif;
             background-color: #ffffff;
             color: #1a1a1a;
             margin: 0;
-            padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             min-height: 100vh;
             line-height: 1.8;
         }
 
-        /* NAVIGATION UNIFIÉE */
         nav {
-            margin-top: 60px;
-            margin-bottom: 80px;
+            margin-bottom: 60px;
             text-transform: uppercase;
             letter-spacing: 3px;
             font-size: 0.8rem;
@@ -44,16 +37,10 @@
             color: #000;
         }
 
-        /* CONTENEUR CENTRAL */
         .container {
             max-width: 600px;
             padding: 0 20px;
             text-align: center;
-            flex-grow: 1;
-        }
-
-        section {
-            padding: 40px 0;
         }
 
         h1 {
@@ -66,7 +53,6 @@
 
         .content {
             text-align: justify;
-            margin-bottom: 40px;
         }
 
         .quote {
@@ -77,43 +63,17 @@
             text-align: center;
         }
 
-        /* SÉPARATEUR DISCRET */
-        .section-sep {
-            width: 40px;
-            height: 1px;
-            background: #eee;
-            margin: 80px auto;
-        }
-
-        /* PIED DE PAGE */
         footer {
-            padding: 60px 0 40px 0;
+            margin-top: 60px;
             font-size: 0.65rem;
             color: #bbb;
             letter-spacing: 1px;
             text-transform: uppercase;
-            text-align: center;
         }
 
         footer a {
             color: #bbb;
             text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        footer a:hover {
-            color: #000;
-        }
-
-        /* ADAPTATION MOBILE */
-        @media (max-width: 600px) {
-            nav a {
-                display: block;
-                margin: 10px 0;
-            }
-            body {
-                margin-top: 20px;
-            }
         }
     </style>
 </head>
@@ -122,34 +82,20 @@
     <nav>
         <a href="collection.html">Collection</a>
         <a href="index.html">Max Clair</a>
-        <a href="#lettre">La Lettre</a>
+        <a href="lettre.html">La Lettre</a>
     </nav>
 
     <div class="container">
-        
-        <section id="maxclair">
-            <h1>Max Clair</h1>
-            <div class="content">
-                <span class="quote">« Transmettre l'essentiel pour laisser la place à l'humain. »</span>
-                <p>
-                    La collection <strong>VERDICT</strong> est née d'une envie de simplicité. L'idée est de proposer des ouvrages courts, sans détour, pour ceux qui cherchent à retrouver de la clarté dans leur quotidien. C’est un point de départ, une base solide sur laquelle chacun peut construire sa propre voie.
-                </p>
-                <p>
-                    Chaque livre est pensé comme une conversation entre la rigueur et l'intuition : la structure donne la force, le lien donne le sens. C’est cette fluidité qui permet à la technique de s’adapter à la vie, et non l’inverse. C’est ce lien qui donne tout son sens à l’apprentissage.
-                </p>
-            </div>
-        </section>
-
-        <div class="section-sep"></div>
-
-        <section id="lettre">
-            <h1>La Lettre</h1>
-            <div class="content" style="text-align: center; font-style: italic; color: #555;">
-                La correspondance est en cours de préparation.<br>
-                Le lien se tisse prochainement.
-            </div>
-        </section>
-
+        <h1>Max Clair</h1>
+        <div class="content">
+            <span class="quote">« Transmettre l'essentiel pour laisser la place à l'humain. »</span>
+            <p>
+                La collection <strong>VERDICT</strong> est née d'une envie de simplicité. L'idée est de proposer des ouvrages courts, sans détour, pour ceux qui cherchent à retrouver de la clarté dans leur quotidien. C’est un point de départ, une base solide sur laquelle chacun peut construire sa propre voie.
+            </p>
+            <p>
+                Chaque livre est pensé comme une conversation entre la rigueur et l'intuition : la structure donne la force, le lien donne le sens. C’est cette fluidité qui permet à la technique de s’adapter à la vie, et non l’inverse.
+            </p>
+        </div>
     </div>
 
     <footer>
