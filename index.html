@@ -14,22 +14,24 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh; /* Centrage vertical parfait */
+            height: 100vh;
             text-align: center;
+            overflow: hidden; /* Empêche le défilement inutile pour garder l'aspect figé */
         }
 
         nav {
-            margin-bottom: 80px;
+            position: absolute;
+            top: 60px;
             text-transform: uppercase;
-            letter-spacing: 3px;
-            font-size: 0.8rem;
+            letter-spacing: 4px;
+            font-size: 0.75rem;
         }
 
         nav a {
             text-decoration: none;
-            color: #888;
-            margin: 0 20px;
-            transition: color 0.3s;
+            color: #999;
+            margin: 0 25px;
+            transition: color 0.4s;
         }
 
         nav a:hover {
@@ -38,25 +40,26 @@
 
         h1 {
             font-weight: normal;
-            font-size: 2rem; /* Plus grand pour l'accueil */
-            letter-spacing: 12px; /* Plus d'air pour le prestige */
+            font-size: 2.2rem;
+            letter-spacing: 15px;
             text-transform: uppercase;
-            margin-bottom: 20px;
+            margin: 0;
         }
 
-        .subtitle {
+        .tagline {
+            margin-top: 25px;
             font-style: italic;
-            color: #666;
-            letter-spacing: 2px;
-            font-size: 0.9rem;
+            color: #777;
+            letter-spacing: 3px;
+            font-size: 0.85rem;
         }
 
         footer {
             position: absolute;
-            bottom: 40px;
-            font-size: 0.65rem;
-            color: #ccc;
-            letter-spacing: 1px;
+            bottom: 50px;
+            font-size: 0.6rem;
+            color: #ddd;
+            letter-spacing: 2px;
             text-transform: uppercase;
         }
     </style>
@@ -69,13 +72,13 @@
         <a href="lettre.html">La Lettre</a>
     </nav>
 
-    <div class="main-hero">
+    <div class="hero">
         <h1>MAX CLAIR</h1>
-        <div class="subtitle">L'Équilibre et le Lien</div>
+        <div class="tagline">L'Équilibre et le Lien</div>
     </div>
 
     <footer>
-        <p>© 2026 MAX CLAIR — TOUS DROITS RÉSERVÉS</p>
+        © 2026 MAX CLAIR — TOUS DROITS RÉSERVÉS
     </footer>
 
 </body>
