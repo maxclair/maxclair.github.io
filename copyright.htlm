@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAX CLAIR — Passer à l'action</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif; 
+            margin: 0; padding: 0;
+            background-color: #fdfdfb; color: #000;
+            line-height: 1.6; height: 100vh;
+            display: flex; flex-direction: column;
+        }
 
+        header { padding: 60px 0 40px 0; text-align: center; }
+        nav { display: inline-block; border-top: 1.5px solid #000; border-bottom: 1.5px solid #000; padding: 12px 0; }
+        nav a { text-decoration: none; color: #000; font-size: 0.85rem; letter-spacing: 3px; margin: 0 35px; text-transform: uppercase; }
+
+        main { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding-bottom: 80px; }
+        h1 { font-size: 3.8rem; letter-spacing: 12px; font-weight: 300; margin: 0; text-transform: uppercase; }
+        .subtitle { margin-top: 25px; font-size: 1.2rem; letter-spacing: 2px; font-style: italic; color: #333; }
+
+        footer { padding: 60px 0; text-align: center; font-size: 0.72rem; letter-spacing: 2px; text-transform: uppercase; color: #444; }
+        footer a { color: #444; text-decoration: none; border-bottom: 1.2px solid #bbb; cursor: pointer; }
+
+        /* MODALE COPYRIGHT */
+        .modal {
+            display: none; position: fixed; z-index: 100;
+            left: 0; top: 0; width: 100%; height: 100%;
+            background-color: rgba(253, 253, 251, 0.98); /* Fond crème quasi opaque */
+            overflow-y: auto;
+        }
+        .modal-content {
+            max-width: 700px; margin: 10% auto; padding: 40px;
+            text-align: left; font-size: 0.95rem; color: #111;
+        }
+        .modal-content h2 { text-transform: uppercase; letter-spacing: 4px; border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 30px; }
+        .modal-content h3 { font-size: 1rem; text-transform: uppercase; margin-top: 25px; }
+        .close-btn { cursor: pointer; font-weight: bold; float: right; font-size: 1.2rem; letter-spacing: 2px; }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2.2rem; letter-spacing: 5px; }
+            nav a { margin: 0 10px; font-size: 0.7rem; }
+            .modal-content { padding: 20px; margin: 5% auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#">Collection</a>
+            <a href="#">Journal</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>MAX CLAIR</h1>
+        <div class="subtitle">Passer à l'action en moins d'une heure.</div>
+    </main>
+
+    <footer>
+        © 2026 MAX CLAIR — <a onclick="openModal()">Détails du Copyright</a>
+    </footer>
+
+    <div id="copyModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">[ FERMER ]</span>
+            <h2>Copyright & Protection</h2>
+            
+            <h3>I. Propriété Intellectuelle</h3>
+            <p>L’ensemble des contenus (textes, structures narratives, concepts d'Armure Mentale) est la propriété exclusive de MAX CLAIR. Toute reproduction est interdite.</p>
+
+            <h3>II. Clause de Non-Responsabilité</h3>
+            <p>Max Clair fournit les leviers, mais le lecteur est l'unique responsable de leur mise en œuvre. Aucune garantie de résultat n'est engagée sans exécution rigoureuse.</p>
+
+            <h3>III. IA & Données</h3>
+            <p>L'utilisation des textes pour l'entraînement d'IA ou la génération de résumés automatisés sans licence est strictement proscrite.</p>
+
+            <p style="margin-top: 40px; font-size: 0.8rem; color: #666;">Contact : [Ton Email Pro]</p>
+        </div>
+    </div>
+
+    <script>
+        function openModal() { document.getElementById("copyModal").style.display = "block"; }
+        function closeModal() { document.getElementById("copyModal").style.display = "none"; }
+        window.onclick = function(event) {
+            let modal = document.getElementById("copyModal");
+            if (event.target == modal) { modal.style.display = "none"; }
+        }
+    </script>
+
+</body>
+</html>
