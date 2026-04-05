@@ -5,132 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAX CLAIR</title>
     <style>
+        /* ARMURE MINIMALISTE - ÉTANCHÉITÉ TOTALE */
         body {
-            font-family: 'Georgia', serif;
-            background-color: #ffffff;
-            color: #1a1a1a;
+            font-family: 'Times New Roman', Times, serif; 
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            background-color: #fdfdfb; /* Blanc crème noble */
+            color: #000000;
+            line-height: 1.6;
+        }
+
+        /* NAVIGATION PERMANENTE */
+        header {
+            padding: 40px 0;
             text-align: center;
         }
 
-        /* NAVIGATION PURE */
         nav {
-            margin-top: 60px;
-            margin-bottom: 100px;
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            font-size: 0.75rem;
+            display: inline-block;
+            border-top: 1.5px solid #000; 
+            border-bottom: 1.5px solid #000; 
+            padding: 10px 0;
         }
 
         nav a {
             text-decoration: none;
-            color: #999;
-            margin: 0 20px;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
             color: #000;
-        }
-
-        /* SECTION HERO (L'ACCUEIL MAGNIFIQUE) */
-        .hero {
-            height: 60vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        h1 {
-            font-weight: normal;
-            font-size: 2.2rem;
-            letter-spacing: 15px;
-            text-transform: uppercase;
-            margin: 0;
-        }
-
-        .tagline {
-            margin-top: 25px;
-            font-style: italic;
-            color: #666;
-            letter-spacing: 3px;
             font-size: 0.9rem;
+            letter-spacing: 3px; 
+            margin: 0 30px;
+            font-weight: 400;
+            text-transform: uppercase;
         }
 
-        /* SECTIONS DE TEXTE ÉPURÉES */
-        .container {
-            max-width: 600px;
-            padding: 100px 20px;
-            border-top: 1px solid #f2f2f2;
-        }
-
-        .content {
-            text-align: justify;
-            line-height: 1.8;
-        }
-
-        .quote {
-            font-style: italic;
-            color: #666;
-            display: block;
-            margin-bottom: 30px;
+        /* ZONE CENTRALE : LE SIGNAL */
+        main {
+            max-width: 700px;
+            margin: 80px auto;
             text-align: center;
         }
 
-        footer {
-            padding: 80px 0 40px 0;
-            font-size: 0.6rem;
-            color: #ccc;
-            letter-spacing: 2px;
+        h1 {
+            font-size: 3.5rem; 
+            letter-spacing: 8px;
+            font-weight: 300;
+            margin: 0;
             text-transform: uppercase;
         }
 
-        footer a {
-            color: #ccc;
-            text-decoration: none;
+        .subtitle {
+            margin-top: 20px;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            /* text-transform: lowercase; SUPPRIMÉ POUR TA LIBERTÉ */
+            font-style: italic;
         }
+
     </style>
 </head>
 <body>
 
-    <nav>
-        <a href="collection.html">Collection</a>
-        <a href="#maxclair">Max Clair</a>
-        <a href="#lettre">La Lettre</a>
-    </nav>
+    <header>
+        <nav>
+            <a href="#">Collection</a>
+            <a href="#">Journal</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
 
-    <div class="hero">
+    <main>
         <h1>MAX CLAIR</h1>
-        <div class="tagline">L'Équilibre et le Lien</div>
-    </div>
-
-    <div id="maxclair" class="container">
-        <div class="content">
-            <span class="quote">« Transmettre l'essentiel pour laisser la place à l'humain. »</span>
-            <p>
-                La collection <strong>VERDICT</strong> est née d'une envie de simplicité. L'idée est de proposer des ouvrages courts, sans détour, pour ceux qui cherchent à retrouver de la clarté dans leur quotidien. C’est un point de départ, une base solide sur laquelle chacun peut construire sa propre voie.
-            </p>
-            <p>
-                Chaque livre est pensé comme une conversation entre la rigueur et l'intuition : la structure donne la force, le lien donne le sens. C’est cette fluidité qui permet à la technique de s’adapter à la vie, et non l’inverse.
-            </p>
-        </div>
-    </div>
-
-    <div id="lettre" class="container">
-        <div class="content" style="text-align: center; font-style: italic; color: #555;">
-            La correspondance est en cours de préparation.<br>
-            Le lien se tisse prochainement.
-        </div>
-    </div>
-
-    <footer>
-        © 2026 MAX CLAIR — <a href="mailto:maxclair7@outlook.fr">CONTACT</a>
-    </footer>
+        <div class="subtitle">Passer à l'action en moins d'une heure.</div>
+    </main>
 
 </body>
 </html>
